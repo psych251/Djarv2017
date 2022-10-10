@@ -14,11 +14,12 @@ output:
 
 ## Introduction
 
-Djärv et al. (2017) shows the difference in the entailment of the presupposed content between cognitive and emotive factives. Specifically, cognitive factives, such as *realize* and *be aware*, entail both the presupposed content in the embedded clause and the attitude/behavior indicated by the predicate. On the other hand, emotive factives, such as *appreciate* and *be happy*, only entail the attitude/behavior. 
+Djärv et al. (2017) shows cognitive and emotive factives differ in the entailment of the presupposed content. Specifically, cognitive factives, such as *realize* and *be aware*, entail both the presupposed content in the embedded clause and the attitude/behavior indicated by the predicate. On the other hand, emotive factives, such as *appreciate* and *be happy*, only entail the attitude/behavior. Given a yes/no-continuation acceptability judgement task, the participant rated the *yes, although...* continuation to be more natural for a question with an emotive factive than for a question that contains a cognitive factive.
 
 ### Stimuli and Procedure
 
-The participants were presented a pair of question and answer. The answer either provides an affirmation and then denies the content of the embedded content (*yes, although...* continuation as illustrated in Yes-response block) or directly provides a negative response (*no, because...* continuation as illustrated in No-response block).
+Each stimulus in the experiment consisted of one question and one response. The response was either in the form *yes, although...*, which first provides an affirmation and then denies the content of the embedded content, or in the form *no, because...*, which directly provides a negative response. 
+
 
 Yes-response block
 
@@ -32,6 +33,8 @@ Q: \{Is Maria aware /Is Maria happy\} that [ Mike is moving back to Chicago]?
 
 A: No, because he isn't.
 
+
+Each participant saw 72 pairs of question and answer, including 24 critical pairs and 48 filler pairs, and was asked to rate the naturalness of each answer based on an 1-to-7 Likert scale. Twenty-four critical pairs were divided into two blocks based on the answer type, and both the order of the blocks and the order of sentence pairs within each block were randomized.
 
 ### Foreseeable Challenge
 
