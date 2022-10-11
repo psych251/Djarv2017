@@ -12,6 +12,7 @@
 *.doc
 *.jpg
 *.gif
+*.html
 
 # Misc Knit Files
 *.aux
@@ -32,6 +33,9 @@ auth.json
 my-own-auth.json
 mturk/
 mturk-and-gmail.txt
+
+# resconnect
+rsconnect/
 
 # Specific file keep
 !README.md
