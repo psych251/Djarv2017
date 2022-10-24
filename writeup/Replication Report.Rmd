@@ -22,27 +22,7 @@ John was happy that his parents are coming to twon, although it turned out he wa
 
 ?? John discovered that his parents are coming to twon, although it turned out he was in fact mistaken/although it turned out that they had to cancel. (Not acceptable as they lead to contradiction).
 
-### Stimuli and Procedure
 
-Each stimulus in the experiment consisted of one question and one response. The response was either in the form *yes, although...*, which first provides an affirmation and then denies the content of the embedded content, or in the form *no, because...*, which directly provides a negative response, as shown in (1) and (2), respectively. 
-
-
-(1) Yes-response block
-
-Q: \{Is Maria aware /happy\} that [Mike is moving back to Chicago]?
-
-A: Yes, although he isn't.
-
-(2) No-response block
-
-Q: \{Is Maria aware /Is Maria happy\} that [Mike is moving back to Chicago]?
-
-A: No, because he isn't.
-
-
-Twenty-four items were used as the embedded content, and each item was paired with both types of predicates (cognitive and emotive) and both types of responses (*yes, although...* or *no, because...*), resulted in four variations for each item. In addition, 48 filler items were also included to elicit the baseline rating for the yes/no responses. [need to give examples--baseline for *no* used questions with two conjunctions," where the only felicitous response would be the no-continuation; baseline for *yes* used non-factive predicates, such as *think*, where yes-continuation would acceptable but not the no-continuation.]
-
-Taken together, each participant saw 144 pairs of question and answer, including 96 critical pairs and 48 filler pairs, and was asked to rate the naturalness of each answer based on a Likert scale, with 1 being "completely unnatural" to 7 being "completely natural." All items were divided into two blocks based on the answer type. Both the order of the blocks and the order of sentence pairs within each block were randomized.
 
 ### Foreseeable Challenge
 
@@ -57,25 +37,69 @@ The link to the experiment is not available, as it was hosted on the older versi
 
 ### Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+<!-- Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size. -->
 
 ### Planned Sample
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+<!--Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any. -->
+Plannded sample size (2.5 times the original sample size?) All participants are native English speakers.
 
 ### Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Each stimulus in the experiment consisted of one question and one response. The response was either in the form *yes, although...*, which first provides an affirmation and then denies the content of the embedded content, or in the form *no, because...*, which directly provides a negative response, as shown in (1) and (2), respectively. 
+
+
+__(1) Yes-response block__
+
+Q: \{Is Maria aware/happy\} that [Mike is moving back to Chicago]?
+
+A: Yes, although he isn't.
+
+__(2) No-response block__
+
+Q: \{Is Maria aware/Is Maria happy\} that [Mike is moving back to Chicago]?
+
+A: No, because he isn't.
+
+
+In the original study, 24 items were used as the embedded content, and each item was paired with both types of predicates (cognitive and emotive) and both types of responses (*yes, although...* or *no, because...*), resulted in four variations for each item. The authors also controlled the syntactic category of these predicates, resulted in the same number of verbal and adjectival factives.
+
+In addition, 48 filler items were also included to elicit the baseline rating for the yes/no responses. Non-factive predicates, such as *think*, were used the baseline for *yes*, where yes-continuation would acceptable but not the no-continuation (Example 3). On the other hand, questions with two conjunctions were used as baseline for *no*, where the only felicitous response would be the no-continuation (Example 4). 
+
+All items were divided into two blocks based on the answer type. Both the order of the blocks and the order of sentence pairs within each block were randomized.
+
+__(3) *yes*-response baseline/ceiling__
+
+Q. Does Sue think that Bill’s parents are going to the wedding?
+
+A1. \#No, because they are. (infelicitous, "Bad control")
+
+A2. Yes, although they aren’t. (acceptable, "Good control")
+
+
+__(4) *no*-response baseline/ceiling__
+
+Q. Is John going to Paris and Rome this summer?
+
+A1. No, he's not. (acceptable, "Good control")
+
+A2. \#Yes, although he isn't going to Rome. (infelicitous, "Bad control")
 
 ### Procedure	
 
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Each participant saw 144 pairs of question and answer, including 96 critical pairs and 48 filler pairs, and was asked to rate the naturalness of each answer based on a Likert scale, with 1 being "completely unnatural" to 7 being "completely natural." 
 
 ### Analysis Plan
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+<!--Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible. -->
 
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+The authors used linear mixed effects regression models to analyze the ratings of the critical pairs. Specifically, they included the predicate type and the answer type as fixed effects. Then, the considered three models, one with the additional main effect of syntactic category, one with the effect of block order, and one simple model with neither of the two. The complex model with all four factors did not converge, and thus was not used. They "tested for the maximally complex models, including all possible interactions of predictors and all random slopes for participants and items as random effects, and (their) different baselines exhausted the logical space of effects and interactions" (p.13).
+
+The simple model, which is the one that only includes the main effects of answer type and predicate type and the interaction effect, is the key model. According to the analyses in the original paper, adding the two additional factors did not significantly change the results. But more importantly, because we do not predicate that neither the block order nor the syntactic category of the predicate should affect the entailment of the embedded content, these factors should not be included as main effects. 
+
+(Why can't we include block order and syntactic category as random effects?)
+
+<!-- You can also pre-specify additional analyses you plan to do.-->
 
 ### Differences from Original Study
 
