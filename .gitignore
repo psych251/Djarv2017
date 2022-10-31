@@ -37,6 +37,9 @@ mturk-and-gmail.txt
 # resconnect
 rsconnect/
 
+# data
+data/
+
 # Specific file keep
 !README.md
 !/original....pdf

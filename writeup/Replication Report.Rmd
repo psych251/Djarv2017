@@ -22,11 +22,7 @@ John was happy that his parents are coming to twon, although it turned out he wa
 
 ?? John discovered that his parents are coming to twon, although it turned out he was in fact mistaken/although it turned out that they had to cancel. (Not acceptable as they lead to contradiction).
 
-
-
-### Foreseeable Challenge
-
-The link to the experiment is not available, as it was hosted on the older version of the Ibex Farm. Hence, I may have to contact the authors to obtain the stimuli set. Also, I am not sure about the study design--based on the Materials section in the original paper, it seems like each critical item was used four times (one for each combination of predicate and response type), but each filler item was only used once. I would like to confirm this with the authors of the original paper.
+[Link to the experiment demo](https://farm.pcibex.net/r/xlqNje/)
 
 [Link to the project repository](https://github.com/psych251/Djarv2017)
 
@@ -95,15 +91,14 @@ Each participant saw 144 pairs of question and answer, including 96 critical pai
 
 The authors used linear mixed effects regression models to analyze the ratings of the critical pairs. Specifically, they included the predicate type and the answer type as fixed effects. Then, the considered three models, one with the additional main effect of syntactic category, one with the effect of block order, and one simple model with neither of the two. The complex model with all four factors did not converge, and thus was not used. They "tested for the maximally complex models, including all possible interactions of predictors and all random slopes for participants and items as random effects, and (their) different baselines exhausted the logical space of effects and interactions" (p.13).
 
-The simple model, which is the one that only includes the main effects of answer type and predicate type and the interaction effect, is the key model. According to the analyses in the original paper, adding the two additional factors did not significantly change the results. But more importantly, because we do not predicate that neither the block order nor the syntactic category of the predicate should affect the entailment of the embedded content, these factors should not be included as main effects. 
+The simple model, which only includes the main effects of answer type and predicate type and the interaction effect, is the key model. According to the analyses in the original paper, adding the two additional factors did not significantly change the results. This is as predicted, since neither the block order nor the syntactic category of the predicate should affect the entailment of the embedded content.
 
-(Why can't we include block order and syntactic category as random effects?)
-
+In addition, I also plan to use Bayesian models to analyze the data. 
 <!-- You can also pre-specify additional analyses you plan to do.-->
 
 ### Differences from Original Study
 
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+<!--Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect. -->
 
 ### Methods Addendum (Post Data Collection)
 
@@ -123,21 +118,54 @@ You can comment this section out prior to final report with data collection.
 
 Data preparation following the analysis plan.
 	
-```{r include=F}
+```{r warning=FALSE}
 ###Data Preparation
-
 ####Load Relevant Libraries and Functions
+library("knitr") # for knitting things
+library("readr")
+library("lme4")
+library("emmeans")
+library("dplyr")
+library("tidyverse") # for all things tidyverse
 
 ####Import data
+# ignore the first 17 lines as they are explanations of the content in each column
+df.data <- read.csv("../data/results.csv", header=FALSE, skip=17)
+# add column names
+colnames(df.data) <- c("reception_time", "ip", "controller", "order", "inner_element", "label", "latin_square", "legend","answer","correct","rt")
+
 
 #### Data exclusion / filtering
 
+# not sure about whether ``latin_square'' is needed or not
+df.data.tidy <- df.data |>
+  select("reception_time", "order", "label", "answer", "rt") |>
+  group_by(reception_time) |> # group by participants id
+  head(-4) |> # remove the last four rows of comments.  alternatively use slice(1:218), but have problem with negative/positive indices?
+  ungroup() |>
+  filter(label!="practice") |>
+  group_by(order) |> # group by trial
+  mutate(total_rt = sum(rt)) |>
+  slice(1) |>
+  ungroup() |>
+  select("reception_time", "order", "answer", "label")
+
+
 #### Prepare data for analysis - create columns etc.
+df.data.clean <- df.data.tidy |>
+  mutate(condition = str_extract_all(label, "[A-Z]+"))
+
+# need to get the condition (predicate type, syntactic category, and block name: YES/NO)
+# need to change the answers to numerical ratings
 ```
 
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.  
+
+```{r}
+# model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type | item))
+```
 
 *Side-by-side graph with original graph is ideal here*
 
