@@ -152,11 +152,27 @@ df.data.tidy <- df.data |>
 
 
 #### Prepare data for analysis - create columns etc.
+# separate by different conditions
 df.data.clean <- df.data.tidy |>
-  mutate(condition = str_extract_all(label, "[A-Z]+"))
+  mutate(label = gsub('([[:upper:]])', ' \\1', label)) |>
+  mutate(exp = str_split_fixed(label, ' ', 5)[,2],
+         predicate_type = str_split_fixed(label, ' ', 5)[,3],
+         syntactic_category = str_split_fixed(label, ' ', 5)[,4],
+         answer_type = str_split_fixed(label, ' ', 5)[,5]) |>
+  select(-label)
 
-# need to get the condition (predicate type, syntactic category, and block name: YES/NO)
-# need to change the answers to numerical ratings
+# change the answers to numerical values
+df.data.clean <- df.data.clean |>
+  mutate(rating = case_when(
+    answer == "CompUnnatural" ~ 1,
+    answer == "Unnatural" ~ 2,
+    answer == "NotNatural" ~ 3,
+    answer == "Average" ~ 4,
+    answer == "Natural" ~ 5,
+    answer == "QuiteNatural" ~ 6,
+    answer == "CompNatural" ~ 7
+  )) |> 
+  select(-answer)
 ```
 
 ### Confirmatory analysis
@@ -164,7 +180,7 @@ df.data.clean <- df.data.tidy |>
 The analyses as specified in the analysis plan.  
 
 ```{r}
-# model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type | item))
+model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type | item))
 ```
 
 *Side-by-side graph with original graph is ideal here*
