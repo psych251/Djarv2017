@@ -58,7 +58,7 @@ Q: \{Is Maria aware/Is Maria happy\} that [Mike is moving back to Chicago]?
 A: No, because he isn't.
 
 
-In the original study, 24 items were used as the embedded content, and each item was paired with both types of predicates (cognitive and emotive) and both types of responses (*yes, although...* or *no, because...*), resulted in four variations for each item. The authors also controlled the syntactic category of these predicates, resulted in the same number of verbal and adjectival factives.
+In the original study, 24 items were used as the embedded content, and each item was paired with both types of predicates (cognitive and emotive) and both types of responses (*yes, although...* or *no, because...*), resulted in four variations of each item. In addition, the authors considered two emotive predicates, *appreciate* and *be happy*, and two cognitive predicates, *realize* and *be aware*, so that for each type of predicate, one is verbal and the other is adjective, in order to control for the syntactic category.
 
 In addition, 48 filler items were also included to elicit the baseline rating for the yes/no responses. Non-factive predicates, such as *think*, were used the baseline for *yes*, where yes-continuation would acceptable but not the no-continuation (Example 3). On the other hand, questions with two conjunctions were used as baseline for *no*, where the only felicitous response would be the no-continuation (Example 4). 
 
@@ -83,7 +83,7 @@ A2. \#Yes, although he isn't going to Rome. (infelicitous, "Bad control")
 
 ### Procedure	
 
-Each participant saw 144 pairs of question and answer, including 96 critical pairs and 48 filler pairs, and was asked to rate the naturalness of each answer based on a Likert scale, with 1 being "completely unnatural" to 7 being "completely natural." 
+Each participant saw 72 pairs of question and answer, including 24 critical pairs and 48 filler pairs, and was asked to rate the naturalness of each answer based on a Likert scale, with 1 being "completely unnatural" to 7 being "completely natural." 
 
 ### Analysis Plan
 
@@ -132,28 +132,36 @@ library("tidyverse") # for all things tidyverse
 # ignore the first 17 lines as they are explanations of the content in each column
 df.data <- read.csv("../data/results.csv", header=FALSE, skip=17)
 # add column names
-colnames(df.data) <- c("reception_time", "ip", "controller", "order", "inner_element", "label", "latin_square", "legend","answer","correct","rt")
+# reception_time -> participant, latin_square -> stimulus_type (either control or filler)
+colnames(df.data) <- c("participant", "ip", "controller", "order", "inner_element", "label", "stimulus_type", "legend","answer","correct","rt")
+
 
 
 #### Data exclusion / filtering
 
-# not sure about whether ``latin_square'' is needed or not
+# ``order'' is also not needed, will extract the item from ``legend''
 df.data.tidy <- df.data |>
-  select("reception_time", "order", "label", "answer", "rt") |>
-  group_by(reception_time) |> # group by participants id
-  head(-4) |> # remove the last four rows of comments.  alternatively use slice(1:218), but have problem with negative/positive indices?
-  ungroup() |>
+  select("participant", "legend", "label", "stimulus_type", "answer", "rt") |>
+  drop_na(rt) |> # when rt is NA, for the instruction page
+  # group_by(reception_time) |> # group by participants id
+  # head(-4) |> # remove the last four rows of comments.  alternatively use slice(1:218), but have problem with negative/positive indices?
+  # ungroup() |>
   filter(label!="practice") |>
-  group_by(order) |> # group by trial
+  group_by(legend) |> # group by trial
   mutate(total_rt = sum(rt)) |>
   slice(1) |>
   ungroup() |>
-  select("reception_time", "order", "answer", "label")
+  select("participant", "legend", "stimulus_type", "answer", "label")
 
 
 #### Prepare data for analysis - create columns etc.
-# separate by different conditions
+# extract the item name 
 df.data.clean <- df.data.tidy |>
+  mutate(item = gsub(".*<b>Item</b>_(.*)\\+<b>Group.*", "\\1", legend)) |>
+  select(-legend)
+
+# separate by different conditions
+df.data.clean <- df.data.clean |>
   mutate(label = gsub('([[:upper:]])', ' \\1', label)) |>
   mutate(exp = str_split_fixed(label, ' ', 5)[,2],
          predicate_type = str_split_fixed(label, ' ', 5)[,3],
@@ -173,6 +181,12 @@ df.data.clean <- df.data.clean |>
     answer == "CompNatural" ~ 7
   )) |> 
   select(-answer)
+
+# checkign the number of each item
+# df.test <- df.data.clean |>
+#   filter(stimulus_type == "C") |>
+#   group_by(item,predicate_type, answer_type) |>
+#   summarize(num = n())
 ```
 
 ### Confirmatory analysis
@@ -180,7 +194,20 @@ df.data.clean <- df.data.clean |>
 The analyses as specified in the analysis plan.  
 
 ```{r}
-model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type | item))
+# model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type  | item),
+#              data = df.data.clean |>
+#                filter(stimulus_type == "C"))
+
+# exclude random effect of item for now: not enough observations for each item
+simple_model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant),
+             data = df.data.clean |>
+               filter(stimulus_type == "C"))
+
+summary(simple_model)
+
+comp_model_answer = lmer(rating ~ predicate_type * answer_type * answer_type + (predicate_type * answer_type * answer_type  | participant),
+                                                                                                                      data = df.data.clean |>
+               filter(stimulus_type == "C"))
 ```
 
 *Side-by-side graph with original graph is ideal here*
