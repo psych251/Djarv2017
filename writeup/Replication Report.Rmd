@@ -93,6 +93,56 @@ The authors used linear mixed effects regression models to analyze the ratings o
 
 The simple model, which only includes the main effects of answer type and predicate type and the interaction effect, is the key model. According to the analyses in the original paper, adding the two additional factors did not significantly change the results. This is as predicted, since neither the block order nor the syntactic category of the predicate should affect the entailment of the embedded content.
 
+```{r message=FALSE, warning=FALSE}
+# power analysis: simulation to estimate the sample size
+####Load Relevant Libraries and Functions
+library("simr")
+library("knitr") # for knitting things
+library("readr")
+library("lme4")
+library("emmeans")
+library("dplyr")
+library("tidyverse") # for all things tidyverse
+
+subject <- factor(1:62)
+items <- paste0("item", c(1:24))
+predicate <- c("emotive", "cognitive")
+answer <- c("yes", "no")
+
+subj_full <- rep(subject, 24)
+items_full <- rep(items, 62)
+answer_full <- rep(rep(answer, each=12),62)
+predicate_full <- rep(rep(rep(predicate, each=6),2),62)
+
+covars <- data.frame(id = subj_full, 
+                     answer_type = answer_full, 
+                     predicate_type = predicate_full,
+                     items = items_full)
+
+# sanity check to make sure the numbers are correct
+check_covars <- covars |>
+  group_by(id, predicate_type, answer_type) |>
+  summarise(count  = n())
+check_covars
+
+fixed <- c(0.8605) # not sure about what the slopes and slopes are, besides the one for interaction?
+rand <- list(0.5, 0.1) # similar issue here for the random effects
+res <- 1
+
+# model <- makeLmer(rating ~ answer_type : predicate_type +
+#                     (answer_type : predicate_type | items) +
+#                     (answer_type : predicate_type | id),
+#                   fixef = fixed,
+#                   VarCorr = rand,
+#                   sigma = res,
+#                   data = covars)
+# 
+# # alternative model that only includes main effects?
+# sim <- powerSim(model, nsim=100, test = fcompare(y~answer_type + predicate_type)) 
+
+```
+
+
 In addition, I also plan to use Bayesian models to analyze the data. 
 <!-- You can also pre-specify additional analyses you plan to do.-->
 
@@ -118,23 +168,15 @@ You can comment this section out prior to final report with data collection.
 
 Data preparation following the analysis plan.
 	
-```{r warning=FALSE}
+```{r message=FALSE, warning=FALSE}
 ###Data Preparation
-####Load Relevant Libraries and Functions
-library("knitr") # for knitting things
-library("readr")
-library("lme4")
-library("emmeans")
-library("dplyr")
-library("tidyverse") # for all things tidyverse
 
 ####Import data
 # ignore the first 17 lines as they are explanations of the content in each column
-df.data <- read.csv("../data/results.csv", header=FALSE, skip=17)
+df.data <- read.csv("../data/pilot/results.csv", header=FALSE, skip=17)
 # add column names
 # reception_time -> participant, latin_square -> stimulus_type (either control or filler)
 colnames(df.data) <- c("participant", "ip", "controller", "order", "inner_element", "label", "stimulus_type", "legend","answer","correct","rt")
-
 
 
 #### Data exclusion / filtering
@@ -167,6 +209,11 @@ df.data.clean <- df.data.clean |>
          predicate_type = str_split_fixed(label, ' ', 5)[,3],
          syntactic_category = str_split_fixed(label, ' ', 5)[,4],
          answer_type = str_split_fixed(label, ' ', 5)[,5]) |>
+    mutate(predicate_type = recode(predicate_type,
+                                  Conj = "Conjunct", 
+                                  Cog = "Cognitive",
+                                  Emo = "Emotive",
+                                  Think = "Think")) |>
   select(-label)
 
 # change the answers to numerical values
@@ -182,35 +229,88 @@ df.data.clean <- df.data.clean |>
   )) |> 
   select(-answer)
 
-# checkign the number of each item
+# check the number of each item
 # df.test <- df.data.clean |>
 #   filter(stimulus_type == "C") |>
 #   group_by(item,predicate_type, answer_type) |>
 #   summarize(num = n())
 ```
 
+```{r message=FALSE, warning=FALSE}
+# plot the result
+# set the theme
+theme_set(theme_bw())
+# color-blind-friendly palette
+cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") 
+
+## helper functions for the graph
+library(bootstrap)
+theta <- function(x,xdata,na.rm=T) {mean(xdata[x],na.rm=na.rm)}
+ci.low <- function(x,na.rm=T) {
+  mean(x,na.rm=na.rm) - quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.025,na.rm=na.rm)}
+ci.high <- function(x,na.rm=T) {
+  quantile(bootstrap(1:length(x),1000,theta,x,na.rm=na.rm)$thetastar,.975,na.rm=na.rm) - mean(x,na.rm=na.rm)}
+
+data_summary <- df.data.clean |>
+  group_by(predicate_type, answer_type) |>
+  summarise(mean_rating = mean(rating),
+            ci_low = ci.low(rating),
+            ci_high = ci.high(rating)) |>
+  ungroup() |>
+  mutate(YMin = mean_rating - ci_low,
+         YMax = mean_rating + ci_high,
+         predicate_type = case_when(predicate_type == "Conjunct" ~ "Bad control",
+                                    predicate_type == "Think" ~ "Good control",
+                                    TRUE ~ predicate_type),
+         predicate_type = fct_relevel(predicate_type, "Bad control", "Cognitive", "Emotive", "Good control"),
+         answer_type = fct_relevel(answer_type, "Yes", "No"))
+
+summary_plot <- ggplot(data_summary,
+       aes(x = predicate_type,
+           y = mean_rating,
+           fill = predicate_type)) +
+  geom_bar(stat="identity") +
+  geom_errorbar(aes(ymin=YMin,
+                    ymax=YMax),
+                width=.2) +
+  facet_grid(. ~ answer_type) +
+  labs(x = "Type",
+       y = "Score (0=Compl. unnatural, 6=Compl. natural)",
+       fill = "Predicate") +
+  scale_fill_manual(values=cbPalette,
+                     labels = c("Bad control", "Cognitive", "Emotive", "Good control"),
+                     guide="none")
+# summary_plot
+ggsave(summary_plot, file="graphs/replication_results.png", width=6, height=4)
+```
+
+```{r, echo=FALSE,out.width="49%", out.height="20%",fig.cap="Plots in the original study (left) and the current study (right) ",fig.show='hold',fig.align='center'}
+knitr::include_graphics(c("graphs/original_results.png","graphs/replication_results.png"))
+``` 
+
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.  
 
-```{r}
-# model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type  | item),
+```{r message=FALSE, warning=FALSE}
+df.data.clean$predicate_type <- as.factor(df.data.clean$predicate_type)
+df.data.clean$predicate_type <- relevel(df.data.clean$predicate_type, ref = "Cognitive")
+df.data.clean$answer_type <- as.factor(df.data.clean$answer_type)
+df.data.clean$answer_type <- relevel(df.data.clean$answer_type, ref = "Yes")
+
+# pilot data: grouping factors doesn't have more than 1 sampled level
+# simple_model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant) + (predicate_type * answer_type  | item),
 #              data = df.data.clean |>
 #                filter(stimulus_type == "C"))
-
-# exclude random effect of item for now: not enough observations for each item
-simple_model = lmer(rating ~ predicate_type * answer_type + (predicate_type * answer_type  | participant),
-             data = df.data.clean |>
-               filter(stimulus_type == "C"))
-
-summary(simple_model)
-
-comp_model_answer = lmer(rating ~ predicate_type * answer_type * answer_type + (predicate_type * answer_type * answer_type  | participant),
-                                                                                                                      data = df.data.clean |>
-               filter(stimulus_type == "C"))
+# 
+# summary(simple_model)
+# comp_model_answer = lmer(rating ~ predicate_type * answer_type * answer_type + (predicate_type * answer_type * answer_type  | participant),
+#                          data = df.data.clean |>
+#                            filter(stimulus_type == "C"))
 ```
 
-*Side-by-side graph with original graph is ideal here*
+
+
 
 ### Exploratory analyses
 
