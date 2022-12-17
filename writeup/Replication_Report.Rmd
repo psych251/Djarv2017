@@ -133,6 +133,7 @@ In addition, 48 fillers were included in the study. In the original report, Djä
 
 __(3) Think__
 
+
 Q. Does Sue think that Bill’s parents are going to the wedding?
 
 A1. \#No, because they are. ("Bad control")
@@ -142,6 +143,7 @@ A2. Yes, although they aren’t. ("Good control")
 
 __(4) Conjunction__
 
+
 Q. Is John going to Paris and Rome this summer?
 
 A1. No, he's not. ("Good control")
@@ -149,9 +151,9 @@ A1. No, he's not. ("Good control")
 A2. \#Yes, although he isn't going to Rome. ("Bad control")
 
 
-In sum, sentences with *think* and conjunction *A and B* that have canonically acceptable and unacceptable continuations were used as fillers, and a closer inspection of the stimuli set reveals that each filler sentence was paired with four possible responses, two for each type of continuations such that two continuations were functioned as good controls and two as bad controls. In other words, *think* with no continuation (A2 in Example 5) and conjunct structure with yes continuation (A4 in Example 6) were also used as good controls, and likewise, *think* with yes continuation (A4 in Example 5) and conjunct with no continuation (A2 in Example 6) were also used as bad controls, resulting in fully crossed between the control type and the continuation type. The full stimuli set is included in the supplement. 
+In sum, sentences with *think* and conjunction *A and B* that have canonically acceptable and unacceptable continuations were used as fillers, and a closer inspection of the stimuli set reveals that each filler sentence was paired with four possible responses, two for each type of continuations such that two continuations were functioned as good controls and two as bad controls. In other words, *think* with no continuation (A2 in Example 3) and conjunct structure with yes continuation (A4 in Example 4) were also used as good controls, and likewise, *think* with yes continuation (A4 in Example 3) and conjunct with no continuation (A2 in Example 4) were also used as bad controls, resulting in fully crossed between the control type and the continuation type. The full stimuli set is included in the supplement. 
 
-__(5) Think__
+__(3) Think__
 
 Q. Does Ryan think that Anna is going to the wedding reception?
 
@@ -164,7 +166,7 @@ A3. Yes, although she isn't. ("Good control")
 A4. \#Yes, although he thinks that only Lisa is. ("Bad control")
 
 
-__(6) Conjunction__
+__(4) Conjunction__
 
 Q. Is Mike going to Paris and Rome this summer?
 

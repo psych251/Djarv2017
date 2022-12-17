@@ -1,0 +1,289 @@
+,item,predicate_types,answer_type,Question,Continuation,num
+1,Critical 1,Cognitive,No,Is Anna aware that Ryan is coming to the wedding?,"No, because he isn't.",13
+2,Critical 1,Emotive,No,Is Anna happy that Nancy is coming to the wedding?,"No, because he isn't.",22
+3,Critical 1,Cognitive,Yes,Is Anna aware that Ryan is coming to the wedding?,"Yes, although he isn't.",9
+4,Critical 1,Emotive,Yes,Is Anna happy that Nancy is coming to the wedding?,"Yes, although he isn't.",16
+5,Critical 10,Emotive,No,Does Maria appreciate that Chris is going to the dinner?,"No, because he isn't.",16
+6,Critical 10,Cognitive,No,Does Maria realize that Chris is going to the dinner?,"No, because he isn't.",9
+7,Critical 10,Emotive,Yes,Does Maria appreciate that Chris is going to the dinner?,"Yes, although he isn't.",13
+8,Critical 10,Cognitive,Yes,Does Maria realize that Chris is going to the dinner?,"Yes, although he isn't.",22
+9,Critical 11,Cognitive,No,Is Sharon aware that James is travelling to South America?,"No, because he isn't.",13
+10,Critical 11,Emotive,No,Is Sharon happy that James is travelling to South America?,"No, because he isn't.",22
+11,Critical 11,Cognitive,Yes,Is Sharon aware that James is travelling to South America?,"Yes, although he isn't.",9
+12,Critical 11,Emotive,Yes,Is Sharon happy that James is travelling to South America?,"Yes, although he isn't.",16
+13,Critical 12,Emotive,No,Does Katie appreciate that Robbie is going to the exhibition?,"No, because he isn't.",9
+14,Critical 12,Cognitive,No,Does Katie realize that Robbie is going to the exhibition?,"No, because he isn't.",16
+15,Critical 12,Emotive,Yes,Does Katie appreciate that Robbie is going to the exhibition?,"Yes, although he isn't.",22
+16,Critical 12,Cognitive,Yes,Does Katie realize that Robbie is going to the exhibition?,"Yes, although he isn't.",13
+17,Critical 13,Cognitive,No,Is Joanna aware that Dave is coming to the graduation ceremony?,"No, because he isn't.",9
+18,Critical 13,Emotive,No,Is Joanna happy that Dave is coming to the graduation ceremony?,"No, because he isn't.",16
+19,Critical 13,Cognitive,Yes,Is Joanna aware that Dave is coming to the graduation ceremony?,"Yes, although he isn't.",22
+20,Critical 13,Emotive,Yes,Is Joanna happy that Dave is coming to the graduation ceremony?,"Yes, although he isn't.",13
+21,Critical 14,Emotive,No,Does Laura appreciate that Matt is visiting her parents?,"No, because he isn't.",22
+22,Critical 14,Cognitive,No,Does Laura realize that Matt is visiting her parents?,"No, because he isn't.",13
+23,Critical 14,Emotive,Yes,Does Laura appreciate that Matt is visiting her parents?,"Yes, although he isn't.",16
+24,Critical 14,Cognitive,Yes,Does Laura realize that Matt is visiting her parents?,"Yes, although he isn't.",9
+25,Critical 15,Cognitive,No,Is Hannah aware that Ted is moving back to Philly?,"No, because he isn't.",16
+26,Critical 15,Emotive,No,Is Hannah happy that Ted is moving back to Philly?,"No, because he isn't.",9
+27,Critical 15,Cognitive,Yes,Is Hannah aware that Ted is moving back to Philly?,"Yes, although he isn't.",13
+28,Critical 15,Emotive,Yes,Is Hannah happy that Ted is moving back to Philly?,"Yes, although he isn't.",22
+29,Critical 16,Emotive,No,Does Sally appreciate that Tom is going to their high school reunion?,"No, because he isn't.",13
+30,Critical 16,Cognitive,No,Does Sally realize that Tom is going to their high school reunion?,"No, because he isn't.",22
+31,Critical 16,Emotive,Yes,Does Sally appreciate that Tom is going to their high school reunion?,"Yes, although he isn't.",9
+32,Critical 16,Cognitive,Yes,Does Sally realize that Tom is going to their high school reunion?,"Yes, although he isn't.",16
+33,Critical 17,Cognitive,No,Is Eve aware that Ben is coming to the bar mitzvah?,"No, because he isn't.",13
+34,Critical 17,Emotive,No,Is Eve happy that Ben is coming to the bar mitzvah?,"No, because he isn't.",22
+35,Critical 17,Cognitive,Yes,Is Eve aware that Ben is coming to the bar mitzvah?,"Yes, although he isn't.",9
+36,Critical 17,Emotive,Yes,Is Eve happy that Ben is coming to the bar mitzvah?,"Yes, although he isn't.",16
+37,Critical 18,Emotive,No,Does Becky appreciate that Joel is going to the talk?,"No, because he isn't.",9
+38,Critical 18,Cognitive,No,Does Becky realize that Joel is going to the talk?,"No, because he isn't.",16
+39,Critical 18,Emotive,Yes,Does Becky appreciate that Joel is going to the talk?,"Yes, although he isn't.",22
+40,Critical 18,Cognitive,Yes,Does Becky realize that Joel is going to the talk?,"Yes, although he isn't.",13
+41,Critical 19,Cognitive,No,Is Sue aware that Nick is going to the gig?,"No, because he isn't.",22
+42,Critical 19,Emotive,No,Is Sue happy that Nick is going to the gig?,"No, because he isn't.",13
+43,Critical 19,Cognitive,Yes,Is Sue aware that Nick is going to the gig?,"Yes, although he isn't.",16
+44,Critical 19,Emotive,Yes,Is Sue happy that Nick is going to the gig?,"Yes, although he isn't.",9
+45,Critical 2,Emotive,No,Does Lisa appreciate that Andrew is going to the conference dinner?,"No, because he isn't.",9
+46,Critical 2,Cognitive,No,Does Lisa realize that Andrew is going to the conference dinner?,"No, because he isn't.",16
+47,Critical 2,Emotive,Yes,Does Lisa appreciate that Andrew is going to the conference dinner?,"Yes, although he isn't.",22
+48,Critical 2,Cognitive,Yes,Does Lisa realize that Andrew is going to the conference dinner?,"Yes, although he isn't.",13
+49,Critical 20,Emotive,No,Does Lesley appreciate that Will is travelling to East Asia?,"No, because he isn't.",16
+50,Critical 20,Cognitive,No,Does Lesley realize that Will is travelling to East Asia?,"No, because he isn't.",9
+51,Critical 20,Emotive,Yes,Does Lesley appreciate that Will is travelling to East Asia?,"Yes, although he isn't.",13
+52,Critical 20,Cognitive,Yes,Does Lesley realize that Will is travelling to East Asia?,"Yes, although he isn't.",22
+53,Critical 21,Cognitive,No,Is Jackie aware that Ed is coming to the family reunion?,"No, because he isn't.",16
+54,Critical 21,Emotive,No,Is Jackie happy that Ed is coming to the family reunion?,"No, because he isn't.",9
+55,Critical 21,Cognitive,Yes,Is Jackie aware that Ed is coming to the family reunion?,"Yes, although he isn't.",13
+56,Critical 21,Emotive,Yes,Is Jackie happy that Ed is coming to the family reunion?,"Yes, although he isn't.",22
+57,Critical 22,Emotive,No,Does Ruth appreciate that Andy is visiting the college campus?,"No, because he isn't.",13
+58,Critical 22,Cognitive,No,Does Ruth realize that Andy is visiting the college campus?,"No, because he isn't.",22
+59,Critical 22,Emotive,Yes,Does Ruth appreciate that Andy is visiting the college campus?,"Yes, although he isn't.",9
+60,Critical 22,Cognitive,Yes,Does Ruth realize that Andy is visiting the college campus?,"Yes, although he isn't.",16
+61,Critical 23,Cognitive,No,Is Liz aware that Dan is moving back to Florida?,"No, because he isn't.",9
+62,Critical 23,Emotive,No,Is Liz happy that Dan is moving back to Florida?,"No, because he isn't.",16
+63,Critical 23,Cognitive,Yes,Is Liz aware that Dan is moving back to Florida?,"Yes, although he isn't.",22
+64,Critical 23,Emotive,Yes,Is Liz happy that Dan is moving back to Florida?,"Yes, although he isn't.",13
+65,Critical 24,Emotive,No,Does Nancy appreciate that John is going to the dinner reception?,"No, because he isn't.",22
+66,Critical 24,Cognitive,No,Does Nancy realize that John is going to the dinner reception?,"No, because he isn't.",13
+67,Critical 24,Emotive,Yes,Does Nancy appreciate that John is going to the dinner reception?,"Yes, although he isn't.",16
+68,Critical 24,Cognitive,Yes,Does Nancy realize that John is going to the dinner reception?,"Yes, although he isn't.",9
+69,Critical 3,Cognitive,No,Is Kathy aware that Richard is going to the concert?,"No, because he isn't.",22
+70,Critical 3,Emotive,No,Is Kathy happy that Richard is going to the concert?,"No, because he isn't.",13
+71,Critical 3,Cognitive,Yes,Is Kathy aware that Richard is going to the concert?,"Yes, although he isn't.",16
+72,Critical 3,Emotive,Yes,Is Kathy happy that Richard is going to the concert?,"Yes, although he isn't.",9
+73,Critical 4,Emotive,No,Does Mary appreciate that James is travelling to Europe?,"No, because he isn't.",16
+74,Critical 4,Cognitive,No,Does Mary realize that James is travelling to Europe?,"No, because he isn't.",9
+75,Critical 4,Emotive,Yes,Does Mary appreciate that James is travelling to Europe?,"Yes, although he isn't.",13
+76,Critical 4,Cognitive,Yes,Does Mary realize that James is travelling to Europe?,"Yes, although he isn't.",22
+77,Critical 5,Cognitive,No,Is Maggie aware that Martin is coming to the party?,"No, because he isn't.",16
+78,Critical 5,Emotive,No,Is Maggie happy that Martin is coming to the party?,"No, because he isn't.",9
+79,Critical 5,Cognitive,Yes,Is Maggie aware that Martin is coming to the party?,"Yes, although he isn't.",13
+80,Critical 5,Emotive,Yes,Is Maggie happy that Martin is coming to the party?,"Yes, although he isn't.",22
+81,Critical 6,Emotive,No,Does Karen appreciate that Larry is visiting her grandparents?,"No, because he isn't.",13
+82,Critical 6,Cognitive,No,Does Karen realize that Larry is visiting her grandparents?,"No, because he isn't.",22
+83,Critical 6,Emotive,Yes,Does Karen appreciate that Larry is visiting her grandparents?,"Yes, although he isn't.",9
+84,Critical 6,Cognitive,Yes,Does Karen realize that Larry is visiting her grandparents?,"Yes, although he isn't.",16
+85,Critical 7,Cognitive,No,Is Maria aware that Mike is moving back to Chicago?,"No, because he isn't.",9
+86,Critical 7,Emotive,No,Is Maria happy that Mike is moving back to Chicago?,"No, because he isn't.",16
+87,Critical 7,Cognitive,Yes,Is Maria aware that Mike is moving back to Chicago?,"Yes, although he isn't.",22
+88,Critical 7,Emotive,Yes,Is Maria happy that Mike is moving back to Chicago?,"Yes, although he isn't.",13
+89,Critical 8,Emotive,No,Does Amy appreciate that Eric is leaving his old job?,"No, because he isn't.",22
+90,Critical 8,Cognitive,No,Does Amy realize that Eric is leaving his old job?,"No, because he isn't.",13
+91,Critical 8,Emotive,Yes,Does Amy appreciate that Eric is leaving his old job?,"Yes, although he isn't.",16
+92,Critical 8,Cognitive,Yes,Does Amy realize that Eric is leaving his old job?,"Yes, although he isn't.",9
+93,Critical 9,Cognitive,No,Is Laura aware that Robin is coming to the wine reception?,"No, because he isn't.",22
+94,Critical 9,Emotive,No,Is Laura happy that Robin is coming to the wine reception?,"No, because he isn't.",13
+95,Critical 9,Cognitive,Yes,Is Laura aware that Robin is coming to the wine reception?,"Yes, although he isn't.",16
+96,Critical 9,Emotive,Yes,Is Laura happy that Robin is coming to the wine reception?,"Yes, although he isn't.",9
+97,FillerConj1,Conj Bad,No,Is Mike going to Paris and Rome this summer?,"No, because he is.",13
+98,FillerConj1,Conj Good,No,Is Mike going to Paris and Rome this summer?,"No, he's not.",22
+99,FillerConj1,Conj Bad,Yes,Is Mike going to Paris and Rome this summer?,"Yes, although he's not going to Paris.",9
+100,FillerConj1,Conj Good,Yes,Is Mike going to Paris and Rome this summer?,"Yes, although he's only spending a day in each city.",16
+101,FillerConj10,Conj Bad,No,Is Jim coming to the show and the afterparty?,"No, because he is.",9
+102,FillerConj10,Conj Good,No,Is Jim coming to the show and the afterparty?,"No, he's not.",16
+103,FillerConj10,Conj Bad,Yes,Is Jim coming to the show and the afterparty?,"Yes, although he's not coming to the show.",22
+104,FillerConj10,Conj Good,Yes,Is Jim coming to the show and the afterparty?,"Yes, although he's only coming for a bit.",13
+105,FillerConj11,Conj Bad,No,Is Kyle going to the concert and the fundraiser?,"No, because he is.",13
+106,FillerConj11,Conj Good,No,Is Kyle going to the concert and the fundraiser?,"No, he's not.",22
+107,FillerConj11,Conj Good,Yes,Is Kyle going to the concert and the fundraiser?,"Yes, although he's not a big supporter of the cause.",16
+108,FillerConj11,Conj Bad,Yes,Is Kyle going to the concert and the fundraiser?,"Yes, although he's not going to the concert.",9
+109,FillerConj12,Conj Bad,No,Is Julie travelling to Mexico and Guatemala?,"No, because she is.",16
+110,FillerConj12,Conj Good,No,Is Julie travelling to Mexico and Guatemala?,"No, she's not.",9
+111,FillerConj12,Conj Good,Yes,Is Julie travelling to Mexico and Guatemala?,"Yes, although she's not going for very long.",22
+112,FillerConj12,Conj Bad,Yes,Is Julie travelling to Mexico and Guatemala?,"Yes, although she's not going to Mexico.",13
+113,FillerConj13,Conj Bad,No,Is Anna going to the lecture and panel discussion?,"No, because she is.",9
+114,FillerConj13,Conj Good,No,Is Anna going to the lecture and panel discussion?,"No, she's not.",16
+115,FillerConj13,Conj Bad,Yes,Is Anna going to the lecture and panel discussion?,"Yes, although she's not going to the lecture.",22
+116,FillerConj13,Conj Good,Yes,Is Anna going to the lecture and panel discussion?,"Yes, although she's not very interested in the topic.",13
+117,FillerConj14,Conj Bad,No,Is Lisa coming to the graduation party and the wine reception?,"No, because she is.",13
+118,FillerConj14,Conj Good,No,Is Lisa coming to the graduation party and the wine reception?,"No, she's not.",22
+119,FillerConj14,Conj Bad,Yes,Is Lisa coming to the graduation party and the wine reception?,"Yes, although she's not going to the graduation party.",9
+120,FillerConj14,Conj Good,Yes,Is Lisa coming to the graduation party and the wine reception?,"Yes, although she's only able to stay for an hour.",16
+121,FillerConj15,Conj Bad,No,Is Louise visiting her old high school and her old middle school?,"No, because she is.",16
+122,FillerConj15,Conj Good,No,Is Louise visiting her old high school and her old middle school?,"No, she's not.",9
+123,FillerConj15,Conj Bad,Yes,Is Louise visiting her old high school and her old middle school?,"Yes, although she's not visting her old high school.",13
+124,FillerConj15,Conj Good,Yes,Is Louise visiting her old high school and her old middle school?,"Yes, although she's only going for a brief visit.",22
+125,FillerConj16,Conj Bad,No,Is Eve going to New Mexico and Arizona?,"No, because she is.",22
+126,FillerConj16,Conj Good,No,Is Eve going to New Mexico and Arizona?,"No, she's not.",13
+127,FillerConj16,Conj Bad,Yes,Is Eve going to New Mexico and Arizona?,"Yes, although she's not going to New Mexico.",16
+128,FillerConj16,Conj Good,Yes,Is Eve going to New Mexico and Arizona?,"Yes, although she's only going for business purposes.",9
+129,FillerConj17,Conj Bad,No,Is Maggie going to the family reunion and the Christmas party?,"No, because she is.",13
+130,FillerConj17,Conj Good,No,Is Maggie going to the family reunion and the Christmas party?,"No, she's not.",22
+131,FillerConj17,Conj Bad,Yes,Is Maggie going to the family reunion and the Christmas party?,"Yes, although she's going to the family reunion.",9
+132,FillerConj17,Conj Good,Yes,Is Maggie going to the family reunion and the Christmas party?,"Yes, although she's not very close to her family.",16
+133,FillerConj18,Conj Bad,No,Is Sharon coming to the wedding and the bar mitzvah?,"No, because she is.",16
+134,FillerConj18,Conj Good,No,Is Sharon coming to the wedding and the bar mitzvah?,"No, she's not.",9
+135,FillerConj18,Conj Good,Yes,Is Sharon coming to the wedding and the bar mitzvah?,"Yes, although she's not a big fan of large family events.",22
+136,FillerConj18,Conj Bad,Yes,Is Sharon coming to the wedding and the bar mitzvah?,"Yes, although she's not coming to the wedding.",13
+137,FillerConj19,Conj Bad,No,Is Fran going to the talk and the reception?,"No, because she is.",22
+138,FillerConj19,Conj Good,No,Is Fran going to the talk and the reception?,"No, she's not.",13
+139,FillerConj19,Conj Good,Yes,Is Fran going to the talk and the reception?,"Yes, although she's not familiar with the speaker.",9
+140,FillerConj19,Conj Bad,Yes,Is Fran going to the talk and the reception?,"Yes, although she's not going to the talk.",16
+141,FillerConj2,Conj Bad,No,Is Luke visiting John and Michael?,"No, because he is.",16
+142,FillerConj2,Conj Good,No,Is Luke visiting John and Michael?,"No, he's not.",9
+143,FillerConj2,Conj Good,Yes,Is Luke visiting John and Michael?,"Yes, although he's not starying very long.",22
+144,FillerConj2,Conj Bad,Yes,Is Luke visiting John and Michael?,"Yes, although he's not visiting John.",13
+145,FillerConj20,Conj Bad,No,Is Lana going to the colloquium and the panel?,"No, because she is.",9
+146,FillerConj20,Conj Good,No,Is Lana going to the colloquium and the panel?,"No, she's not.",16
+147,FillerConj20,Conj Bad,Yes,Is Lana going to the colloquium and the panel?,"Yes, although she's going to the colloquium.",22
+148,FillerConj20,Conj Good,Yes,Is Lana going to the colloquium and the panel?,"Yes, although she's only going because she has to.",13
+149,FillerConj21,Conj Bad,No,Is Liz travelling to Finland and Norway?,"No, because she is.",16
+150,FillerConj21,Conj Good,No,Is Liz travelling to Finland and Norway?,"No, she's not.",9
+151,FillerConj21,Conj Good,Yes,Is Liz travelling to Finland and Norway?,"Yes, although she's not a big fan of cold weather.",22
+152,FillerConj21,Conj Bad,Yes,Is Liz travelling to Finland and Norway?,"Yes, although she's not travelling to Finland.",13
+153,FillerConj22,Conj Bad,No,Is Naomi coming to the potluck dinner and the party?,"No, because she is.",22
+154,FillerConj22,Conj Good,No,Is Naomi coming to the potluck dinner and the party?,"No, she's not.",13
+155,FillerConj22,Conj Good,Yes,Is Naomi coming to the potluck dinner and the party?,"Yes, although she's doesn't know what to bring.",9
+156,FillerConj22,Conj Bad,Yes,Is Naomi coming to the potluck dinner and the party?,"Yes, although she's not coming to the potluck.",16
+157,FillerConj23,Conj Bad,No,Is Tricia visiting her friends and her relatives?,"No, because she is.",9
+158,FillerConj23,Conj Good,No,Is Tricia visiting her friends and her relatives?,"No, she's not.",16
+159,FillerConj23,Conj Bad,Yes,Is Tricia visiting her friends and her relatives?,"Yes, although she's not visiting her friends.",22
+160,FillerConj23,Conj Good,Yes,Is Tricia visiting her friends and her relatives?,"Yes, although she's only going for a short visit.",13
+161,FillerConj24,Conj Bad,No,Is Lucy going to Italy and Spain?,"No, because she is.",13
+162,FillerConj24,Conj Good,No,Is Lucy going to Italy and Spain?,"No, she's not.",22
+163,FillerConj24,Conj Bad,Yes,Is Lucy going to Italy and Spain?,"Yes, although she's not going to Italy.",9
+164,FillerConj24,Conj Good,Yes,Is Lucy going to Italy and Spain?,"Yes, although she's only there for a few days.",16
+165,FillerConj3,Conj Bad,No,Is Colin coming to the dinner and the dance?,"No, because he is.",22
+166,FillerConj3,Conj Good,No,Is Colin coming to the dinner and the dance?,"No, he's not.",13
+167,FillerConj3,Conj Bad,Yes,Is Colin coming to the dinner and the dance?,"Yes, although he's not coming to the dinner.",16
+168,FillerConj3,Conj Good,Yes,Is Colin coming to the dinner and the dance?,"Yes, although he's not very fond of dancing.",9
+169,FillerConj4,Conj Bad,No,Is Tim going to the museum and the orchestra?,"No, because he is.",9
+170,FillerConj4,Conj Good,No,Is Tim going to the museum and the orchestra?,"No, he's not.",16
+171,FillerConj4,Conj Bad,Yes,Is Tim going to the museum and the orchestra?,"Yes, although he's not going to the museum.",22
+172,FillerConj4,Conj Good,Yes,Is Tim going to the museum and the orchestra?,"Yes, although he's not that into live music.",13
+173,FillerConj5,Conj Bad,No,Is Dean travelling to Japan and Korea?,"No, because he is.",16
+174,FillerConj5,Conj Good,No,Is Dean travelling to Japan and Korea?,"No, he's not.",9
+175,FillerConj5,Conj Bad,Yes,Is Dean travelling to Japan and Korea?,"Yes, although he's not going to Japan.",13
+176,FillerConj5,Conj Good,Yes,Is Dean travelling to Japan and Korea?,"Yes, although he's only going for work.",22
+177,FillerConj6,Conj Bad,No,Is Nick coming to the brunch and the reception?,"No, because he is.",22
+178,FillerConj6,Conj Good,No,Is Nick coming to the brunch and the reception?,"No, he's not.",13
+179,FillerConj6,Conj Good,Yes,Is Nick coming to the brunch and the reception?,"Yes, although he's not a big fan of large gatherings.",9
+180,FillerConj6,Conj Bad,Yes,Is Nick coming to the brunch and the reception?,"Yes, although he's not coming to the brunch.",16
+181,FillerConj7,Conj Bad,No,Is Ken visiting his parents and his sister?,"No, because he is.",9
+182,FillerConj7,Conj Good,No,Is Ken visiting his parents and his sister?,"No, he's not.",16
+183,FillerConj7,Conj Good,Yes,Is Ken visiting his parents and his sister?,"Yes, although he's not very keen on his family.",13
+184,FillerConj7,Conj Bad,Yes,Is Ken visiting his parents and his sister?,"Yes, although he's not visting his parents.",22
+185,FillerConj8,Conj Bad,No,Is Rob going to New York and Boston?,"No, because he is.",13
+186,FillerConj8,Conj Good,No,Is Rob going to New York and Boston?,"No, he's not.",22
+187,FillerConj8,Conj Bad,Yes,Is Rob going to New York and Boston?,"Yes, although he's not going to New York.",9
+188,FillerConj8,Conj Good,Yes,Is Rob going to New York and Boston?,"Yes, although he's only staying for a couple of days.",16
+189,FillerConj9,Conj Bad,No,Is Ed taking up yoga and pilates?,"No, because he is.",22
+190,FillerConj9,Conj Good,No,Is Ed taking up yoga and pilates?,"No, he's not.",13
+191,FillerConj9,Conj Bad,Yes,Is Ed taking up yoga and pilates?,"Yes, although he's not taking up yoga.",16
+192,FillerConj9,Conj Good,Yes,Is Ed taking up yoga and pilates?,"Yes, although he's not very big on exercise.",9
+193,FillerThink1,Think Bad,No,Does Ryan think that Anna is going to the wedding reception?,"No, because she is.",13
+194,FillerThink1,Think Good,No,Does Ryan think that Anna is going to the wedding reception?,"No, because she isn't.",22
+195,FillerThink1,Think Bad,Yes,Does Ryan think that Anna is going to the wedding reception?,"Yes, although he thinks that only Lisa is.",9
+196,FillerThink1,Think Good,Yes,Does Ryan think that Anna is going to the wedding reception?,"Yes, although she isn't.",16
+197,FillerThink10,Think Bad,No,Does Chris think that Maria is going to the gala dinner?,"No, because she is.",9
+198,FillerThink10,Think Good,No,Does Chris think that Maria is going to the gala dinner?,"No, because she isn't.",16
+199,FillerThink10,Think Bad,Yes,Does Chris think that Maria is going to the gala dinner?,"Yes, although he thinks that only Sharon is.",22
+200,FillerThink10,Think Good,Yes,Does Chris think that Maria is going to the gala dinner?,"Yes, although she isn't.",13
+201,FillerThink11,Think Bad,No,Does James think that Sharon is travelling to Brazil?,"No, because she is.",13
+202,FillerThink11,Think Good,No,Does James think that Sharon is travelling to Brazil?,"No, because she isn't.",22
+203,FillerThink11,Think Bad,Yes,Does James think that Sharon is travelling to Brazil?,"Yes, although he thinks that only Katie is.",9
+204,FillerThink11,Think Good,Yes,Does James think that Sharon is travelling to Brazil?,"Yes, although she isn't.",16
+205,FillerThink12,Think Bad,No,Does Robbie think that Katie is going to the museum fundraiser?,"No, because she is.",16
+206,FillerThink12,Think Good,No,Does Robbie think that Katie is going to the museum fundraiser?,"No, because she isn't.",9
+207,FillerThink12,Think Bad,Yes,Does Robbie think that Katie is going to the museum fundraiser?,"Yes, although he thinks that only Joanna is.",13
+208,FillerThink12,Think Good,Yes,Does Robbie think that Katie is going to the museum fundraiser?,"Yes, although she isn't.",22
+209,FillerThink13,Think Bad,No,Does Dave think that Joanna is coming to the graduation party?,"No, because she is.",9
+210,FillerThink13,Think Good,No,Does Dave think that Joanna is coming to the graduation party?,"No, because she isn't.",16
+211,FillerThink13,Think Bad,Yes,Does Dave think that Joanna is coming to the graduation party?,"Yes, although he thinks that only Laura is.",22
+212,FillerThink13,Think Good,Yes,Does Dave think that Joanna is coming to the graduation party?,"Yes, although she isn't.",13
+213,FillerThink14,Think Bad,No,Does Matt think that Laura is visiting her old high school?,"No, because she is.",13
+214,FillerThink14,Think Good,No,Does Matt think that Laura is visiting her old high school?,"No, because she isn't.",22
+215,FillerThink14,Think Bad,Yes,Does Matt think that Laura is visiting her old high school?,"Yes, although he thinks that only Hannah is.",9
+216,FillerThink14,Think Good,Yes,Does Matt think that Laura is visiting her old high school?,"Yes, although she isn't.",16
+217,FillerThink15,Think Bad,No,Does Ted think that Hannah is moving back to Indiana?,"No, because she is.",16
+218,FillerThink15,Think Good,No,Does Ted think that Hannah is moving back to Indiana?,"No, because she isn't.",9
+219,FillerThink15,Think Bad,Yes,Does Ted think that Hannah is moving back to Indiana?,"Yes, although he thinks that only Sally is.",13
+220,FillerThink15,Think Good,Yes,Does Ted think that Hannah is moving back to Indiana?,"Yes, although she isn't.",22
+221,FillerThink16,Think Bad,No,Does Tom think that Sally is going to their college reunion?,"No, because she is.",22
+222,FillerThink16,Think Good,No,Does Tom think that Sally is going to their college reunion?,"No, because she isn't.",13
+223,FillerThink16,Think Bad,Yes,Does Tom think that Sally is going to their college reunion?,"Yes, although he thinks that only Eve is.",16
+224,FillerThink16,Think Good,Yes,Does Tom think that Sally is going to their college reunion?,"Yes, although she isn't.",9
+225,FillerThink17,Think Bad,No,Does Ben think that Eve is coming to the wedding reception?,"No, because she is.",13
+226,FillerThink17,Think Good,No,Does Ben think that Eve is coming to the wedding reception?,"No, because she isn't.",22
+227,FillerThink17,Think Bad,Yes,Does Ben think that Eve is coming to the wedding reception?,"Yes, although he thinks that only Becky is.",9
+228,FillerThink17,Think Good,Yes,Does Ben think that Eve is coming to the wedding reception?,"Yes, although she isn't.",16
+229,FillerThink18,Think Bad,No,Does Joel think that Becky is going to the lecture?,"No, because she is.",16
+230,FillerThink18,Think Good,No,Does Joel think that Becky is going to the lecture?,"No, because she isn't.",9
+231,FillerThink18,Think Bad,Yes,Does Joel think that Becky is going to the lecture?,"Yes, although he thinks that only Sue is.",13
+232,FillerThink18,Think Good,Yes,Does Joel think that Becky is going to the lecture?,"Yes, although she isn't.",22
+233,FillerThink19,Think Bad,No,Does Nick think that Sue is going to the town hall meeting?,"No, because she is.",22
+234,FillerThink19,Think Good,No,Does Nick think that Sue is going to the town hall meeting?,"No, because she isn't.",13
+235,FillerThink19,Think Bad,Yes,Does Nick think that Sue is going to the town hall meeting?,"Yes, although he thinks that only Lesley is.",16
+236,FillerThink19,Think Good,Yes,Does Nick think that Sue is going to the town hall meeting?,"Yes, although she isn't.",9
+237,FillerThink2,Think Bad,No,Does Andrew think that Lisa is coming to the conference?,"No, because she is.",16
+238,FillerThink2,Think Good,No,Does Andrew think that Lisa is coming to the conference?,"No, because she isn't.",9
+239,FillerThink2,Think Bad,Yes,Does Andrew think that Lisa is coming to the conference?,"Yes, although he thinks that only Kathy is.",13
+240,FillerThink2,Think Good,Yes,Does Andrew think that Lisa is coming to the conference?,"Yes, although she isn't.",22
+241,FillerThink20,Think Bad,No,Does Will think that Lesley is travelling to the West Coast?,"No, because she is.",9
+242,FillerThink20,Think Good,No,Does Will think that Lesley is travelling to the West Coast?,"No, because she isn't.",16
+243,FillerThink20,Think Bad,Yes,Does Will think that Lesley is travelling to the West Coast?,"Yes, although he thinks that only Jackie is.",22
+244,FillerThink20,Think Good,Yes,Does Will think that Lesley is travelling to the West Coast?,"Yes, although she isn't.",13
+245,FillerThink21,Think Bad,No,Does Ed think that Jackie is coming to the Thanksgiving dinner?,"No, because she is.",16
+246,FillerThink21,Think Good,No,Does Ed think that Jackie is coming to the Thanksgiving dinner?,"No, because she isn't.",9
+247,FillerThink21,Think Bad,Yes,Does Ed think that Jackie is coming to the Thanksgiving dinner?,"Yes, although he thinks that only Ruth is.",13
+248,FillerThink21,Think Good,Yes,Does Ed think that Jackie is coming to the Thanksgiving dinner?,"Yes, although she isn't.",22
+249,FillerThink22,Think Bad,No,Does Andy think that Ruth is visiting her home town?,"No, because she is.",22
+250,FillerThink22,Think Good,No,Does Andy think that Ruth is visiting her home town?,"No, because she isn't.",13
+251,FillerThink22,Think Bad,Yes,Does Andy think that Ruth is visiting her home town?,"Yes, although he thinks that only Liz is.",16
+252,FillerThink22,Think Good,Yes,Does Andy think that Ruth is visiting her home town?,"Yes, although she isn't.",9
+253,FillerThink23,Think Bad,No,Does Dan think that Liz is moving to London?,"No, because she is.",9
+254,FillerThink23,Think Good,No,Does Dan think that Liz is moving to London?,"No, because she isn't.",16
+255,FillerThink23,Think Bad,Yes,Does Dan think that Liz is moving to London?,"Yes, although he thinks that only Nancy is.",22
+256,FillerThink23,Think Good,Yes,Does Dan think that Liz is moving to London?,"Yes, although she isn't.",13
+257,FillerThink24,Think Bad,No,Does John think that Nancy is going to the potluck dinner?,"No, because she is.",13
+258,FillerThink24,Think Good,No,Does John think that Nancy is going to the potluck dinner?,"No, because she isn't.",22
+259,FillerThink24,Think Bad,Yes,Does John think that Nancy is going to the potluck dinner?,"Yes, although he thinks that only Anna is.",9
+260,FillerThink24,Think Good,Yes,Does John think that Nancy is going to the potluck dinner?,"Yes, although she isn't.",16
+261,FillerThink3,Think Bad,No,Does Richard think that Kathy is going to see the show?,"No, because she is.",22
+262,FillerThink3,Think Good,No,Does Richard think that Kathy is going to see the show?,"No, because she isn't.",13
+263,FillerThink3,Think Bad,Yes,Does Richard think that Kathy is going to see the show?,"Yes, although he thinks that only Mary is.",16
+264,FillerThink3,Think Good,Yes,Does Richard think that Kathy is going to see the show?,"Yes, although she isn't.",9
+265,FillerThink4,Think Bad,No,Does James think that Mary is travelling to Africa?,"No, because she is.",9
+266,FillerThink4,Think Good,No,Does James think that Mary is travelling to Africa?,"No, because she isn't.",16
+267,FillerThink4,Think Bad,Yes,Does James think that Mary is travelling to Africa?,"Yes, although he thinks that only Maggie is.",22
+268,FillerThink4,Think Good,Yes,Does James think that Mary is travelling to Africa?,"Yes, although she isn't.",13
+269,FillerThink5,Think Bad,No,Does Martin think that Maggie is coming to his graduation party?,"No, because she is.",16
+270,FillerThink5,Think Good,No,Does Martin think that Maggie is coming to his graduation party?,"No, because she isn't.",9
+271,FillerThink5,Think Bad,Yes,Does Martin think that Maggie is coming to his graduation party?,"Yes, although he thinks that only Karen is.",13
+272,FillerThink5,Think Good,Yes,Does Martin think that Maggie is coming to his graduation party?,"Yes, although she isn't.",22
+273,FillerThink6,Think Bad,No,Does Larry think that Karen is visiting his family?,"No, because she is.",22
+274,FillerThink6,Think Good,No,Does Larry think that Karen is visiting his family?,"No, because she isn't.",13
+275,FillerThink6,Think Bad,Yes,Does Larry think that Karen is visiting his family?,"Yes, although he thinks that only Maria is.",16
+276,FillerThink6,Think Good,Yes,Does Larry think that Karen is visiting his family?,"Yes, although she isn't.",9
+277,FillerThink7,Think Bad,No,Does Mike think that Maria is moving back to New York?,"No, because she is.",9
+278,FillerThink7,Think Good,No,Does Mike think that Maria is moving back to New York?,"No, because she isn't.",16
+279,FillerThink7,Think Bad,Yes,Does Mike think that Maria is moving back to New York?,"Yes, although he thinks that only Amy is.",22
+280,FillerThink7,Think Good,Yes,Does Mike think that Maria is moving back to New York?,"Yes, although she isn't.",13
+281,FillerThink8,Think Bad,No,Does Eric think that Amy is leaving her job?,"No, because she is.",13
+282,FillerThink8,Think Good,No,Does Eric think that Amy is leaving her job?,"No, because she isn't.",22
+283,FillerThink8,Think Bad,Yes,Does Eric think that Amy is leaving her job?,"Yes, although he thinks that only Laura is.",9
+284,FillerThink8,Think Good,Yes,Does Eric think that Amy is leaving her job?,"Yes, although she isn't.",16
+285,FillerThink9,Think Bad,No,Does Robin think that Laura is coming to the meeting?,"No, because she is.",22
+286,FillerThink9,Think Good,No,Does Robin think that Laura is coming to the meeting?,"No, because she isn't.",13
+287,FillerThink9,Think Bad,Yes,Does Robin think that Laura is coming to the meeting?,"Yes, although he thinks that only Maria is.",16
+288,FillerThink9,Think Good,Yes,Does Robin think that Laura is coming to the meeting?,"Yes, although she isn't.",9
