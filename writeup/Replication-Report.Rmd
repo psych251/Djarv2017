@@ -111,7 +111,7 @@ I plan to recruit 62 participants, which is the same number of participants in t
 
 ### Materials
 
-Each stimulus in the experiment consisted of one question and one response^[Thanks to authors of the original paper for sending the original experimental setup on PCIbex.]. The response was either in the form *yes, although...*, which first provides an affirmation and then denies the content of the embedded content, or in the form *no, because...*, which directly provides a negative response, as shown in (1) and (2), respectively. 
+Each stimulus in the experiment consisted of one question and one response.^[Thanks to authors of the original paper for providing the original experimental setup on PCIbex.] The response was either in the form *yes, although...*, which first provides an affirmation and then denies the content of the embedded content, or in the form *no, because...*, which directly provides a negative response, as shown in (1) and (2), respectively. 
 
 
 __(1) Yes-response block__
@@ -363,7 +363,7 @@ summary_plot <- ggplot(data_summary,
 ```{r main_plot, echo=FALSE,out.width="49%", out.height="20%",fig.cap="Meaning ratings by answer type and predicate type. Plot on the left is from the original study and on the right is the plot of the current study. The error bars represent the 95% bootstrapped confidence intervals.",fig.show='hold',fig.align='center'}
 knitr::include_graphics(c("graphs/original_results.png","graphs/replication_results.png"))
 ``` 
-Overall, the results in the graphs look similar^[In the figure of the original study, the score might be in the range from 1 to 7, with 0 being completely unnatural and 7 being completely natural, instead of 0 to 6 as shown in the title of the y-axis. This is because the average no-rating of the *Good controls* is slightly above 6.].
+Overall, the results in the graphs look similar.^[In the figure of the original study, the score might be in the range from 1 to 7, with 1 being completely unnatural and 7 being completely natural, instead of 0 to 6 as shown in the title of the y-axis. This is because the average no-rating of the *Good controls* is slightly above 6, which would exceed the maximum if it was on a 0-6 scale.]
 
 ### Confirmatory analysis
 
