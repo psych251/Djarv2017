@@ -24,7 +24,7 @@ John was happy that his parents are coming to town, although it turned out he wa
 
 ?? John discovered that his parents are coming to town, although it turned out he was in fact mistaken/although it turned out that they had to cancel. (Not acceptable as they lead to contradiction).
 
-Here are the links to [the experiment demo](https://farm.pcibex.net/r/xlqNje/), [the project repository](https://github.com/psych251/Djarv2017), and [the original paper](https://semanticsarchive.net/Archive/DRjNjViN/DjaervZehrSchwarz.pdf)
+Here are the links to [the experiment demo](https://farm.pcibex.net/r/xlqNje/): https://farm.pcibex.net/r/xlqNje/, [the project repository](https://github.com/psych251/Djarv2017): https://github.com/psych251/Djarv2017, and [the original paper](https://semanticsarchive.net/Archive/DRjNjViN/DjaervZehrSchwarz.pdf).
 
 
 ## Methods
