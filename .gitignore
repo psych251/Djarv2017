@@ -38,7 +38,10 @@ mturk-and-gmail.txt
 rsconnect/
 
 # data
-data/
+raw_data/
+
+# duplicated rmd file
+writeup/Replication\ Report.Rmd
 
 # Specific file keep
 !README.md

@@ -1,5 +1,5 @@
 ---
-title: "Replication of Study 2 by Djärv, Zehr, & Schwarz (2017, Proceedings of Sinn und Bedeutung 21)"
+title: "Replication of Study 2 in Djärv, Zehr, & Schwarz (2017, Proceedings of Sinn und Bedeutung 21)"
 author: "Penny Pan"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -218,7 +218,7 @@ None.
 
 Data preparation following the analysis plan.
 	
-```{r message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 ###Data Preparation
 
 ####Import data
@@ -252,12 +252,12 @@ df.data.tidy <- df.data.tidy |>
 
 # save the anonymized for later use
 # write.csv(df.data.tidy, "../data/pilot/cleaned_data.csv" , row.names = FALSE) 
-# write.csv(df.data.tidy, "../data/main/cleaned_data.csv" , row.names = FALSE) 
+write.csv(df.data.tidy, "../data/main/cleaned_data.csv" , row.names = FALSE)
 ```
 
 ```{r message=FALSE, warning=FALSE}
 #### Prepare data for analysis - create columns etc.
-# read the anonymized file
+# read the cleaned-up data file
 # df.data.tidy <- read.csv("../data/pilot/cleaned_data.csv", header=TRUE)
 df.data.tidy <- read.csv("../data/main/cleaned_data.csv", header=TRUE)
 # extract the item name 
@@ -360,7 +360,7 @@ summary_plot <- ggplot(data_summary,
 ```
 
 
-```{r main_plot, echo=FALSE,out.width="49%", out.height="20%",fig.cap="Meaning ratings by answer type and predicate type. Plot on the left is from the original study and on the right is the plot of the current study. The error bars represent the 95% confidence intervals.",fig.show='hold',fig.align='center'}
+```{r main_plot, echo=FALSE,out.width="49%", out.height="20%",fig.cap="Meaning ratings by answer type and predicate type. Plot on the left is from the original study and on the right is the plot of the current study. The error bars represent the 95% bootstrapped confidence intervals.",fig.show='hold',fig.align='center'}
 knitr::include_graphics(c("graphs/original_results.png","graphs/replication_results.png"))
 ``` 
 Overall, the results in the graphs look similar^[In the figure of the original study, the score might be in the range from 1 to 7, with 0 being completely unnatural and 7 being completely natural, instead of 0 to 6 as shown in the title of the y-axis. This is because the average no-rating of the *Good controls* is slightly above 6.].
@@ -458,7 +458,7 @@ summary_think_plot <- ggplot(data_summary_all |>
 # ggsave(summary_think_plot, file="graphs/replication_think.png", width=7, height=4)
 ``` 
 
-```{r exploratory_plot, fig.align="center", echo=FALSE,out.width="80%", out.height="20%",fig.cap="Acceptability ratings of cognitives, emotives, and non-factive control (think). The error bars represent the 95% confidence intervals.",fig.show='hold',fig.align='center'}
+```{r exploratory_plot, fig.align="center", echo=FALSE,out.width="80%", out.height="20%",fig.cap="Acceptability ratings of cognitives, emotives, and non-factive control (think). The error bars represent the 95% bootstrapped confidence intervals.",fig.show='hold',fig.align='center'}
 knitr::include_graphics("graphs/replication_think.png")
 ``` 
 
